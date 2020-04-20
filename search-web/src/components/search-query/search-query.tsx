@@ -1,10 +1,12 @@
-import { Component, ComponentInterface, State, Method, h } from '@stencil/core';
+import { Component, ComponentInterface, Prop, State, Method, h } from '@stencil/core';
 
 @Component({
   tag: 'search-query',
   styleUrl: 'search-query.css'
 })
 export class SearchQuery implements ComponentInterface {
+
+  @Prop() maxlength: number;
 
   @State() query: string;
   @State() data = [];
@@ -40,7 +42,7 @@ export class SearchQuery implements ComponentInterface {
           <div class="col-md-8 offset-md-2 mt-3 mb-3">
             <form onSubmit={(e) => this.handleSubmit(e)}>              
               <div class="input-group mb-3">
-                <input type="text" value={this.query} onInput={(event) => this.handleChange(event)}  class="form-control" placeholder="¿qué desea buscar hoy?"></input>
+                <input type="text" value={this.query} onInput={(event) => this.handleChange(event)}  class="form-control" placeholder="¿qué desea buscar hoy?" maxlength={this.maxlength}></input>
                 <div class="input-group-append">
                   <button class="btn btn-outline-secondary" type="submit">Buscar</button>
                 </div>

@@ -7,6 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface SearchQuery {
+        "maxlength": number;
         "search": (query: any) => Promise<void>;
     }
 }
@@ -23,6 +24,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface SearchQuery {
+        "maxlength"?: number;
     }
     interface IntrinsicElements {
         "search-query": SearchQuery;
