@@ -19,4 +19,4 @@ Web component example using Stencil.
 You can access your application at http://localhost:3333
 
 ## Gallery
-![](../images/01.png)
+![](images/01.png)
