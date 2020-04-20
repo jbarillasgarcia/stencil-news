@@ -9,10 +9,14 @@ Web component example using Stencil.
 ## Custom Component
 * search-query
 
-## Clone & Run
+## Run Example
 ```sh
 > git clone https://github.com/jbarillasgarcia/stencil-news.git
 > cd stencil-news/search-web
 > npm install
 > npm start
+
+URL: http://localhost:3333
 ```
+## Gallery
+![](../images/01-basic-movement.jpg)
