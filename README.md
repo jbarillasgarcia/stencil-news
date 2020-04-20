@@ -16,6 +16,7 @@ Web component example using Stencil.
 > npm install
 > npm start
 ```
-Your application will be available at http://localhost:3333
+You can access your application in http://localhost:3333
+
 ## Gallery
 ![](../images/01-basic-movement.jpg)
