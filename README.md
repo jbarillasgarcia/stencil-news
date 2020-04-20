@@ -15,8 +15,7 @@ Web component example using Stencil.
 > cd stencil-news/search-web
 > npm install
 > npm start
-
-URL: http://localhost:3333
 ```
+Your application will be available at http://localhost:3333
 ## Gallery
 ![](../images/01-basic-movement.jpg)
